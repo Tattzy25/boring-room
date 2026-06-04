@@ -159,9 +159,7 @@ export default function StickerWall() {
   // Import handle for Matter, set once the dynamic import resolves.
   const matterRef    = useRef<typeof import('matter-js') | null>(null)
 
-  const [isDark, setIsDark] = useState<boolean>(() =>
-    typeof window !== 'undefined' ? document.documentElement.classList.contains('dark') : true,
-  )
+  const [isDark, setIsDark] = useState<boolean>(true)
   const isDarkRef = useRef<boolean>(isDark)
 
   useIsomorphicLayoutEffect(() => {
@@ -557,6 +555,13 @@ export default function StickerWall() {
     }
 
     input.value = ''
+
+    // Send to webhook via API
+    fetch('/api/feedback', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content: value, kind: 'text' })
+    }).catch(err => console.error('Feedback error:', err))
   }
 
   const bg = isDark ? BG_DARK : BG_LIGHT

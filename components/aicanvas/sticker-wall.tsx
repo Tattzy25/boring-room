@@ -566,9 +566,9 @@ export default function StickerWall() {
 
   const bg = isDark ? BG_DARK : BG_LIGHT
   const inputBg = isDark ? 'rgba(0,0,0,0.9)' : 'rgba(255,255,255,0.9)'
-  const accentBg = '#8A9CF4'
+  const accentBg = '#000000'
   const inputText = isDark ? 'rgba(255,255,255,0.95)' : 'rgba(17,24,39,0.95)'
-  const accentText = isDark ? '#111827' : '#FFFFFF'
+  const accentText = isDark ? '#FFFFFF' : '#FFFFFF'
   const stickerBorder = isDark ? 'rgba(255,255,255,0.7)' : 'rgba(17,24,39,0.12)'
   const stickerShadow = isDark
     ? '0 6px 14px rgba(0,0,0,0.25), 0 2px 0 rgba(0,0,0,0.08)'

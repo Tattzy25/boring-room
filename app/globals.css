@@ -55,7 +55,7 @@ html, body {
 }
 
 :root {
-    --background: #FFFFFF;
+    --background: transparent;
     --foreground: oklch(0% 0 0);
     --card: oklch(1 0 0);
     --card-foreground: oklch(0% 0 0);
@@ -90,7 +90,7 @@ html, body {
 }
 
 .dark {
-    --background: #000000;
+    --background: transparent;
     --foreground: oklch(0.985 0 0);
     --card: oklch(0% 0 0);
     --card-foreground: oklch(0.985 0 0);

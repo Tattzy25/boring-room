@@ -42,19 +42,19 @@ const BG_DARK  = '#0F0F12'
 const BG_LIGHT = '#F5F1E8'
 
 const SEED_QUOTES = [
-  'love the new layout',
-  'prompts are 🔥',
-  'found a tiny bug on hover',
-  'please add a search',
-  'this saved me hours',
-  'fonts feel just right',
-  'mobile nav could be bigger',
-  'the physics here rules',
-  'more components please',
-  'onboarding was smooth',
+  "cant wait to see this",
+  "pretty damn excited",
+  "that was smooth",
+  "hope this comes out insane",
+  "lets fucking go",
+  "so far so good",
+  "im seriously hyped",
+  "that was crazy fast",
+  "really wanna see it now",
+  "hope this shit looks amazing",
 ]
 
-const SEED_EMOJIS = ['👏', '💡', '🙌', '👀', '💬', '✅', '🔥', '💯', '🎉', '❤️', '🤔', '⭐']
+const SEED_EMOJIS = ['👏', '💡', '🙌', '🤖', '👀', '💬', '✅', '🔥', '💯', '🎉', '❤️', '🤔', '⭐']
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 type StickerKind = 'text' | 'emoji'
@@ -670,7 +670,7 @@ export default function StickerWall() {
                 textShadow: titleShadow,
               }}
             >
-              Feedback Wall
+              The Boring Feedback Wall
             </h2>
             <p
               className="select-none"
@@ -684,7 +684,7 @@ export default function StickerWall() {
                 maxWidth: '46ch',
               }}
             >
-              Drop a note, toss an emoji, drag anything around. Real physics, no rules — just leave your mark on the wall.
+              Drop a Note, Toss an Emoji, Drag Anything Around. Real Physics, No Gimiks. Serious Shit Just Leave A feedback your Model is Almost Ready.
             </p>
           </div>
           <div

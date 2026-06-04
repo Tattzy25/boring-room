@@ -38,8 +38,8 @@ const PALETTE_LIGHT = ['#F59E0B', '#34D399', '#F472B6', '#A78BFA', '#38BDF8', '#
 
 const STICKER_TEXT_COLOR_DARK = '#111827'
 const STICKER_TEXT_COLOR_LIGHT = '#FFFFFF'
-const BG_DARK  = '#0F0F12'
-const BG_LIGHT = '#F5F1E8'
+const BG_DARK  = '#000000'
+const BG_LIGHT = '#FFFFFF'
 
 const SEED_QUOTES = [
   "cant wait to see this",
